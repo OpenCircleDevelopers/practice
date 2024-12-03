@@ -399,48 +399,83 @@
 
         */
         //------------------------------------------------------
+        /*
+        fibonnaci sequence solution
+
+        function checkinput(){
+
+            solution 1 = my  solution with the help of prompt and if else without using function 
+
+            var n = prompt("put how many times you want to get the output")
+            let output = []
+
+            if(n == 1){
+                output = [0]
+            }else if(n == 2){
+                output = [0, 1]
+            }else{
+                output = [0, 1]
+                
+                for(var i = 3; i <= n; i++){
+                    
+                    var lastLetter = output[output.length - 1]
+                    var secondLastLetter = output[output.length - 2]
+                
+                    var solution = (secondLastLetter) + (lastLetter)
+                    
+                    output.push(solution);
+                }
+            }
+            console.log(output)
+
+
+            solution 2 = this solution with the help of function and for loop
+
+
+            function fibGen(n){
+                let output = []
+                if(n === 1){
+                    output = [0]
+                }else if(n === 2){
+                    output = [0, 1]
+                }else{
+                    output=[0, 1];
+                    
+                    for(var i = 3; i <= n; i++){
+                        output.push((output[output.length - 1]) + (output[output.length - 2]))
+                    }
+                }
+                return output
+            }
+            fibGen(124)
+
+
+            solution 2 = this solution with the help of function and while loop
+
+
+            function fibGen(n){
+                let output = []
+                if(n === 1){
+                    output = [0]
+                }else if(n === 2){
+                    output = [0, 1]
+                }else{
+                    output=[0, 1];
+                    var i = 3
+                    while(i <= n){
+                        output.push((output[output.length - 1]) + (output[output.length - 2]))
+                        i++
+                    }
+                }
+                return output
+            }
+            fibGen(5)
+
+
+        }
+
+        */
+        //------------------------------------------------------
     </script>
 </body>
 </html>
-
-
-var n = prompt("put how many times you want to get the output")
-let output = []
-
-if(n == 1){
-    output = [0]  
-    console.log(output)
-}else if(n == 2){
-    output = [0, 1]   
-    console.log(output)
-}else{
-    output = [0, 1]
-    
-    for(var i = 3; i <= n; i++){
-        
-        var lastLetter = output[output.length - 1]
-        var secondLastLetter = output[output.length - 2]
-    
-        var solution = (secondLastLetter) + (lastLetter)
-        
-        output.push(solution);
-        console.log(output)
-    }
-}
-
-// function fibGen(n){
-//     let output = []
-//     if(n === 1){
-//         output = [0]
-//     }else if(n === 2){
-//         output = [0, 1]
-//     }else{
-//         output=[0, 1];
-        
-//         for(var i = 3; i <= n; i++){
-//             output.push((output[output.length - 1]) + (output[output.length - 2]))
-//         }
-//     }
-//     return output
-// }
-// fibGen(124)
