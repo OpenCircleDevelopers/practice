@@ -404,15 +404,43 @@
 </html>
 
 
-var array = [0,1]
+var n = prompt("put how many times you want to get the output")
+let output = []
 
-for(var i = 0; i <= 10; i++){
+if(n == 1){
+    output = [0]  
+    console.log(output)
+}else if(n == 2){
+    output = [0, 1]   
+    console.log(output)
+}else{
+    output = [0, 1]
     
-    var lastLetter = array[array.length - 1]
-    var secondLastLetter = array[array.length - 2]
-
-    var solution = (secondLastLetter) + (lastLetter)
+    for(var i = 3; i <= n; i++){
+        
+        var lastLetter = output[output.length - 1]
+        var secondLastLetter = output[output.length - 2]
     
-    array.push(solution);
-    console.log(array)
+        var solution = (secondLastLetter) + (lastLetter)
+        
+        output.push(solution);
+        console.log(output)
+    }
 }
+
+// function fibGen(n){
+//     let output = []
+//     if(n === 1){
+//         output = [0]
+//     }else if(n === 2){
+//         output = [0, 1]
+//     }else{
+//         output=[0, 1];
+        
+//         for(var i = 3; i <= n; i++){
+//             output.push((output[output.length - 1]) + (output[output.length - 2]))
+//         }
+//     }
+//     return output
+// }
+// fibGen(124)
