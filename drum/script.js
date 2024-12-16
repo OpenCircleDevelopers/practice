@@ -3,7 +3,7 @@ var i = 0
 
 for(var i =0 ; i<=length; i++){
     document.querySelectorAll("button")[i].addEventListener("click",function clickHandler(){
-        alert("you clicked on button" + i)
+        alert("you click on button " + this.style.color = 'blue')
     }) 
 }
     
