@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="checkinput()">button </button>
+    <script>
+        // numbers passed or failed
+
+        // function checkinput() {
+        //     const numbers = prompt("Please put your numbers here"); 
+        //     if(numbers>70 && numbers<=100){
+        //         alert("you are passed")
+        //     }
+        //     else if(numbers>0 && numbers<=70){
+        //         alert("you are failed")
+        //     }
+        //     else{
+        //         alert("put a valid number")
+        //     }
+        // }
+        // ---------------------------------------------------
+        // ternary operators
+
+        // function checkinput() {
+            // const numbers = prompt("Please put number here");
+        //     alert("yout number is " + numbers);
+            // alert(numbers <= 19 ? "you put owner's name" :"you don't put owner's name");
+        //     (numbers == 20 || numbers == "hasnan") ? console.log("you put owner's name") : console.log("you don't put owner's name");
+        // }
+        // ---------------------------------------------------
+        // for loop
+
+        // function checkinput() {
+        //     let n = prompt("Please put number here");
+        //     n = Number.parseInt(n);
+        //     let sum = 0;
+        //     for(let i = 0; i<n; i++){
+        //         console.log(sum += (i + 1));
+        //     }
+        //     alert("n = " + n + " sum = " + sum);
+        // }
+        //----------------------------------------------------
+        // 2. for loop
+
+        // function checkinput(){
+            // let n = prompt("put your word here")
+            // for(let i = 0;  i < n.length; i++){
+            //     console.log(n[i]);
+            // }
+            //-----------------------------
+            // let i = prompt("put the letter number here")
+            // i = Number.parseInt(i);
+            // console.log(n[i]);
+        // }
+        //-----------------------------------------------------
+        // 3. for loop array print
+
+        // function checkinput(){
+        //     const a = {name:"Hasnan", class:12, age:20};
+        //     const keys = Object.keys(a);
+        //     const values = Object.values(a);
+        //     console.log(a)
+        //     console.log(keys[1])
+        //     for(let i = 0; i< keys.length; i++){
+        //         console.log(a[(Object.keys(a))[1]])
+        //     }
+        //     console.log(values[1])
+        // }
+        //-----------------------------------------------------
+        // 3. for in loop
+
+        // function checkinput(){
+        // let object = {
+        //     name:"Hasnan",
+        //     class:12, 
+        //     age:20
+        // };
+        // for (let keys in object){
+        //     console.log("heading = " + keys + " values = " + object[keys])
+        // }
+        // }
+        //-----------------------------------------------------
+        // 4. for of loop
+
+        // function checkinput(){
+        //     let object = [
+        //         12, 13, 14, 15, 16
+        //     ]
+        //     for (let a of object){
+        //         console.log(a)
+        //     }
+        // }
+        //-----------------------------------------------------
+        // while loop
+
+        // function checkinput(){
+        //     let a = prompt("input data here");
+        //     a = Number.parseInt(a);
+        //     let b = ["hasnan", "tahir", "mehmood"]
+
+        //     let i = 0;
+
+        //     while(i<a){
+        //         console.log(a);
+        //         i++;
+        //     }
+        //     while(i<b.length){
+        //         console.log(b[Object.keys(b)[i]]);
+        //         i++;
+        //     }
+        // }
+        //------------------------------------------------------
+        // function checkinput(){
+        //     fruits = ["apple", "banana", "cherry"];
+        //     fruits.forEach(myfunction);
+        //     function myfunction(value){
+        //         console.log(value)
+        //     }
+        // }
+        //------------------------------------------------------
+        /* to capatilize the first letter 
+
+        function checkinput(){
+        
+        var a = prompt("put number here");
+        var slice1 = a.slice(0,1);
+        var sliceoth = a.slice(1,a.length)
+        var uppercasea = slice1.toUpperCase(); 
+        var result = (uppercasea + sliceoth);
+        alert(result)
+        }
+        */
+        //------------------------------------------------------
+        /* use of function to but milk
+
+        function checkinput(){
+
+        function cal(money){
+        console.log("there will be " + ( Math.floor(money / 1.5) ) + " bottles for " + money + " Dollars and remaining is " + (money - ( (Math.floor( money / 1.5 )) * 1.5 )) + " Dollar");
+        }
+
+        cal(8)
+        */
+        //------------------------------------------------------
+        /* to calucalte you age using function
+
+        function checkinput(){
+
+        function ageCal(age){
+
+        var remainingAge = 90 - age;
+        var months = remainingAge * 12;
+        var days = remainingAge * 365 ;
+        console.log("you have " + months + " months left and " + days + " days left")
+        }
+
+        ageCal(29)
+        
+        */
+        //------------------------------------------------------
+        /* to calculate you left age with last type of function
+
+        function checkinput(){
+
+        function remDays( myAge,lastYear ){
+            console.log("you have " + ageCal(myAge,lastYear) + " days left")
+        }
+
+        function ageCal(currentAge,lastingYear){
+            let remainingAge = Math.floor(lastingYear - currentAge);
+            let remainingDays = Math.floor(remainingAge * 365);
+
+            return remainingDays;
+        }
+        remDays(prompt("put your current age"),prompt("put how much you will last"))
+
+        */
+        //------------------------------------------------------
+        /* BMI Calculator
+
+        function checkinput(){
+
+        function bmiCalculator(weight,height){
+            var bmi = weight / Math.pow(height, 2); 
+            return bmi
+        }
+        alert(Math.round( bmiCalculator(prompt("put weight here"),prompt("put height here")) ))
+
+
+        */
+        //------------------------------------------------------
+        /* another function example
+
+        function checkinput(){
+
+        var names = ["hasnan","samsam","zargham","abdullah","kashan"];
+
+        function fun1(names){
+            console.log("1 hello")
+            console.log(hello(names))
+        }
+        function hello(array){
+            let namearray = array
+            console.log("1" + namearray)
+            return array
+        }
+        fun1("hello")
+
+
+        */
+        //------------------------------------------------------
+        /* Love Calculator
+
+        function checkinput(){
+
+        var num = ( Math.floor( Math.random() * 100) ) + 1;
+        function loveCalculator(yourName,herName){
+            alert(yourName + " and " + herName + " have " + num + "% Chances to be married")
+        }
+        loveCalculator(prompt("Enter your name"),prompt("Enter her name"))
+
+
+        */
+        //------------------------------------------------------
+        /* leap year finder
+
+        function checkinput(){
+
+        let year = prompt("Put year here to find weather year is leap or not")
+        if( (year % 4 === 0) && (year % 100 !== 0) || (year % 400 === 0) ){
+            alert("your " + year + " is leap year")
+        }
+        else{
+            alert("your " + year + " is not leap year")
+        }
+
+
+        */
+        //------------------------------------------------------
+        /* guest list validater
+
+        function checkinput(){
+
+        let guestList = ["hasnan","tahir","mehmood","ramzan","tausif","muhammad"];
+
+        let checkGuest = prompt("put guest name here")
+        if(guestList.includes(checkGuest)){
+            alert("your are welcome, you may now go inside sorry for delay")
+        }else{
+            alert("sorry but we can't find your name in the guest list")
+        }
+                }
+
+
+        */
+        //------------------------------------------------------
+        /* my own fizzfazz solution
+
+        function checkinput(){
+
+        let num = prompt("put yor number here")
+        if((num % 3 === 0) && (num % 5 === 0)){
+            console.log(num + " is fizz fazz ")
+        } else{
+            if(num % 5 == 0){
+                console.log(num + " is fazz")
+            } 
+            else{
+                if(num % 3 == 0){
+                    console.log(num + " is fizz") 
+                    } 
+                else{
+                        console.log(num + " is not a fizz neither a fazz it is also not a fizzfazz")
+                    }
+                }
+            }
+
+
+        */
+        //------------------------------------------------------
+        /* full fizz buzz solution
+
+        function checkinput(){
+
+        let output = [];
+        let count = 1;
+
+        function fizzbuzz(){
+            if((count % 3 === 0) && (count % 5 === 0)){
+                output.push("fizz buzz")
+            }
+            else if(count % 5 === 0){
+                output.push("buzz")
+            }
+            else if(count % 3 === 0){
+                output.push("fizz")
+            }
+            else{
+                output.push(count);
+            }
+            
+            count++
+            
+            console.log(output)
+        }
+        fizzbuzz()
+        fizzbuzz()
+        fizzbuzz()
+        fizzbuzz()
+        fizzbuzz()
+        fizzbuzz()
+        fizzbuzz()
+        fizzbuzz()
+        fizzbuzz()
+        fizzbuzz()
+        fizzbuzz()
+        fizzbuzz()
+        fizzbuzz()
+        fizzbuzz()
+        fizzbuzz()
+
+        }
+
+
+        */
+        //------------------------------------------------------
+        /* who to pay bill
+
+        function checkinput(){
+
+            let names = ["hasnan","tahir","tausif","mehmood","everybody contribute"];
+
+            function numGen(names){
+                let arrayLength = names.length;
+                let ranNumGen = ( Math.floor( Math.random() * arrayLength ) );
+                return ranNumGen
+            }
+
+            function printName(names){
+                console.log(names[numGen(names)])
+            }
+
+            printName(names)
+
+
+        }
+
+        */
+        //------------------------------------------------------
+        /* bottle examples solution
+
+        function checkinput(){
+
+            solution 1
+
+            let num1 = 10;
+            let num2 = 9;
+
+            function bottlesCal(){
+                num1 = num1 - 1;
+                num2 = num2 - 1;
+
+                console.log("i have " + num1 + " bottles and then 1 break")
+                console.log("now i have " + num2 + " bottles left.")
+            }
+            bottlesCal()
+            bottlesCal()
+            bottlesCal()
+            bottlesCal()
+
+
+            solution 2
+
+
+            let num1 = 10;
+            let num2 = 9;
+
+            function bottlesCal(){
+                console.log("i have " + num1 + " bottles and then 1 break")
+                console.log("now i have " + num2 + " bottles left.")
+                bottleRecal(num1,num2)
+            }
+            function bottleRecal(){
+                num1--;
+                num2--;
+                return num1;
+                return num2;
+            }
+            bottlesCal()
+            bottlesCal()
+            bottlesCal()
+            bottlesCal()
+
+        }
+
+        */
+        //------------------------------------------------------
+        /*
+        fibonnaci sequence solution
+
+        function checkinput(){
+
+            solution 1 = my  solution with the help of prompt and if else without using function 
+
+            var n = prompt("put how many times you want to get the output")
+            let output = []
+
+            if(n == 1){
+                output = [0]
+            }else if(n == 2){
+                output = [0, 1]
+            }else{
+                output = [0, 1]
+                
+                for(var i = 3; i <= n; i++){
+                    
+                    var lastLetter = output[output.length - 1]
+                    var secondLastLetter = output[output.length - 2]
+                
+                    var solution = (secondLastLetter) + (lastLetter)
+                    
+                    output.push(solution);
+                }
+            }
+            console.log(output)
+
+
+            solution 2 = this solution with the help of function and for loop
+
+
+            function fibGen(n){
+                let output = []
+                if(n === 1){
+                    output = [0]
+                }else if(n === 2){
+                    output = [0, 1]
+                }else{
+                    output=[0, 1];
+                    
+                    for(var i = 3; i <= n; i++){
+                        output.push((output[output.length - 1]) + (output[output.length - 2]))
+                    }
+                }
+                return output
+            }
+            fibGen(124)
+
+
+            solution 2 = this solution with the help of function and while loop
+
+
+            function fibGen(n){
+                let output = []
+                if(n === 1){
+                    output = [0]
+                }else if(n === 2){
+                    output = [0, 1]
+                }else{
+                    output=[0, 1];
+                    var i = 3
+                    while(i <= n){
+                        output.push((output[output.length - 1]) + (output[output.length - 2]))
+                        i++
+                    }
+                }
+                return output
+            }
+            fibGen(5)
+
+
+        }
+
+        */
+        //------------------------------------------------------
+        /*bell boy example
+        
+        function checkinput(){
+
+        function bellBoy(name,age,experience){
+            this.name = name;
+            this.age = age;
+            this.experience = experience;
+        }
+
+        var bellBoy1 = new bellBoy("hasnan","20","2 year experience");
+        var bellBoy2 = new bellBoy("samsam","21","no experience");
+
+        }
+        */
+        //------------------------------------------------------
+        /* calling function from another function
+
+        function checkinput(){
+
+        function multiply(num1 , num2){
+            return(num1 * num2)
+        }
+
+        function add(num1 , num2){
+            return(num1 + num2)
+        }
+
+        function result(num1 , num2 , operator){
+            return(operator(num1 , num2))
+        }
+
+        result(10,20,add)
+
+        }
+        */
+        //------------------------------------------------------
+    </script>
+</body>
+</html>
